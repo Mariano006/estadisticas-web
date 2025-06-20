@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Estadísticas</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estadísticas del Sistema</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
       margin: 0;
-      padding: 30px;
-      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #1e1e2f, #2e2e48);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
     }
     h1 {
-      color: #222;
-      font-size: 28px;
+      font-size: 26px;
+      margin-bottom: 30px;
+      text-align: center;
     }
-    button {
-      display: block;
-      width: 90%;
+    .btn {
+      width: 100%;
       max-width: 400px;
-      margin: 15px auto;
-      padding: 18px;
+      margin: 12px 0;
+      padding: 20px;
       font-size: 18px;
-      background-color: #007bff;
-      color: white;
       border: none;
       border-radius: 12px;
+      background-color: #00bcd4;
+      color: white;
       cursor: pointer;
+      transition: 0.3s;
     }
-    button:hover {
-      background-color: #0056b3;
+    .btn:hover {
+      background-color: #0097a7;
+    }
+    .footer {
+      margin-top: auto;
+      font-size: 13px;
+      color: #ccc;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <h1>📊 Estadísticas del Sistema</h1>
+  <h1>📊 Sistema de Estadísticas Policiales</h1>
 
-  <button onclick="location.href='mapa_alcaidias.html'">🗺️ Ver Mapa de Alcaidías</button>
-  <button onclick="location.href='visitas.html'">👥 Ver Visitas</button>
-  <button onclick="location.href='ocupacion.html'">📈 Ver Ocupación</button>
-  <button onclick="location.href='remisiones.html'">🚓 Ver Remisiones</button>
-
-</body>
-</html>
-
+  <button class="btn" onclick="location.href='barrios_departamento_comuna.html'">🗺️ Mapa de Alcaidías</button>
+  <button class="btn" onclick="location.href='estadisticas.html'">📈 Ocupación por Alcaidía</button>
+  <button class="btn" onclick="alert('🚧 Sección Remisiones en desarrollo')">🚓 Remisiones</button>
+  <button class="btn" onclick="alert('🚧 Sección Visitas en desarrollo')">👥 Visitas</button>
 
   <div class="footer">© 2025 División Enlace – Policía de la Ciudad</div>
 
 </body>
 </html>
+
